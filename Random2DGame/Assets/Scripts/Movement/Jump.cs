@@ -11,4 +11,14 @@ public class Jump : MonoBehaviour
     {
         gameObject.transform.Translate(new Vector2());
     }
+    IEnumerable Acsend()
+    {
+        new WaitForSeconds(0);
+        
+
+         return yield 0;
+        
+    }
+
+    
 }

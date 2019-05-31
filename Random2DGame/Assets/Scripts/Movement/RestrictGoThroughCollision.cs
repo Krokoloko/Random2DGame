@@ -36,8 +36,8 @@ public class RestrictGoThroughCollision : MonoBehaviour
                         return travel;
                     }
                 }
-                Debug.Log("subtracting speed");
-                return travel-(travel - hit.distance)-0.01f;
+                Debug.Log(travel - (travel - hit.distance) - 0.01f);
+                return travel-(travel - hit.distance)-0.01f<0.01?0: travel - (travel - hit.distance) - 0.01f;
             }
             else
             {
